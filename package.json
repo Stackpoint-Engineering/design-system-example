@@ -1,0 +1,24 @@
+{
+  "name": "frontend-workspace",
+  "private": true,
+  "workspaces": [
+    "surface-components"
+  ],
+  "pnpm": {
+    "overrides": {
+      "rollup": "npm:@rollup/wasm-node"
+    }
+  },
+  "scripts": {
+    "lint": "pnpm -r run lint",
+    "test": "pnpm -r run test",
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "preview": "pnpm -r run preview",
+    "build:surface-components": "pnpm --filter surface-components run build",
+    "storybook:surface-components": "pnpm --filter surface-components run storybook"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

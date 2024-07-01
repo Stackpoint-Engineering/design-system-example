@@ -1,0 +1,5 @@
+# Storybook build output
+storybook-static/*
+
+# Storybook cache
+.node_modules_storybook/

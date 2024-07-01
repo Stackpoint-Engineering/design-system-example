@@ -1,0 +1,67 @@
+{
+  "name": "surface-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/surface-components.umd.js",
+  "module": "dist/surface-components.es.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/surface-components.es.js",
+      "require": "./dist/surface-components.umd.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./extension-styles.css": "./dist/extension-styles.css",
+    "./full-page-styles.css": "./dist/full-page-styles.css"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist/",
+    "build:css": "sass src/styles/full-page-styles.scss dist/full-page-styles.css && sass src/styles/extension-styles.scss dist/extension-styles.css",
+    "build": "vite build && npm run build:css",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.1.0",
+    "@storybook/addon-interactions": "^8.1.0",
+    "@storybook/addon-links": "^8.1.0",
+    "@storybook/addon-onboarding": "^8.1.0",
+    "@storybook/blocks": "^8.1.0",
+    "@storybook/builder-vite": "^8.1.0",
+    "@storybook/react": "^8.1.0",
+    "@storybook/react-vite": "^8.1.0",
+    "@storybook/test": "^8.1.0",
+    "@types/node": "^20.14.8",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "sass": "1.69.5",
+    "storybook": "^8.1.0",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-plugin-static-copy": "^1.0.5"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-hover-card": "^1.0.7",
+    "@radix-ui/react-navigation-menu": "^1.1.4",
+    "@radix-ui/react-select": "^2.0.0",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide-react": "^0.396.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7",
+    "vaul": "^0.9.1"
+  }
+}
