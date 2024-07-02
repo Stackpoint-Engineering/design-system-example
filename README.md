@@ -2,7 +2,7 @@
 This is a template / example of a design system using Vite, Storybook, Tailwind, and React, and ShadCN. 
 
 ## Generating Stories
-Stories are generated using the Stackpoint Storybook custom GPT Agent which can be found [here]([https://chatgpt.com/share/730b5160-3aaa-48f0-b380-c783a2df8fe1](https://chatgpt.com/g/g-IkO5XWR7h-stackpoint-storybook-helper))
+Stories are generated using the Stackpoint Storybook custom GPT Agent which can be found [here](https://chatgpt.com/g/g-IkO5XWR7h-stackpoint-storybook-helper)
 
 To use the Agent, simply copy your component into the chat and make any small import / story name changes as necessary. This agent is highly tuned
 to create robust, repeatable Storybook stories. 
